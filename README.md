@@ -26,7 +26,8 @@ Initial MVP chat UI + direct API integration
 Fix for a Failed to fetch error caused by the agent blocking browser-origin requests → added a same-origin proxy
 Netlify deployment support via serverless functions
 
-- **Step by step**
+- **Step by step** :
+
 Initial build — The user gave a long, detailed spec: a chat UI with a fixed header, scrollable message area, fixed input bar, Markdown rendering, auto-scroll, a "Reset session" button, and precise integration instructions for calling a remote MCP-based legal agent (exact endpoints and JSON payload shape). Codex produced a static frontend (index.html, styles.css, app.js) implementing this.
 
 Debugging a CORS/fetch error — When the live app failed with "Failed to fetch," the user reported the error back in plain language. Codex diagnosed it as the remote agent blocking direct browser requests (403, origin not allowed) and fixed it by adding a Node.js backend proxy (server.js, updated package.json, a Dockerfile) so the browser talks to your own server, which then talks to the agent.
