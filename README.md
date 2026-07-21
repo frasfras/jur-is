@@ -12,6 +12,16 @@ Primary users: law students, lawyers, paralegals, legal researchers, and anyone 
 
 ## Configuration
 
+## Architecture
+
+The frontend (index.html, styles.css, app.js) talks to a legal-research agent through a server-side proxy rather than calling it directly, because the agent's API rejects direct browser requests (CORS / origin not allowed).
+
+Two deployment paths are supported:
+
+
+Node server (server.js, package.json, Dockerfile) — run with npm start, or deploy via the included Dockerfile. The browser calls /api/session and /api/run, which server.js forwards to the agent.
+Netlify Functions — a serverless equivalent (netlify/functions/legal-agent.mjs) that proxies the same /api/* routes for static hosting on Netlify, since Netlify doesn't run a persistent Node server.
+
 ## Get Started
   Clone this repository In your terminal , navigate to the app folder. Run `npm start`
 
