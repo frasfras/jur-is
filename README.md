@@ -1,6 +1,6 @@
 # Juris CoPilot — Philippine legal research , grounded in sources
 
-This repository contains a web app that uses GPT-5.6 and Gemini toolset to implement a **Legal research Agent**. It allows users to ask questions about Philippine jurisprudence and Republic Acts.
+This repository contains a web app that uses GPT-5.6 and Gemini to implement a AI-powered  **Legal research Agent**. It allows users to ask questions about Philippine jurisprudence and Republic Acts, backed by a remote legal-research agent as its primary source.
 
 
 
@@ -8,11 +8,12 @@ This repository contains a web app that uses GPT-5.6 and Gemini toolset to imple
 
 allows users to ask questions about Philippine jurisprudence and Republic Acts.
 
+Primary users: law students, lawyers, paralegals, legal researchers, and anyone who needs to understand Philippine legal authorities
 
 ## Configuration
 
 ## Get Started
-   In your terminal , navigate to the app folder. Run `npm start`
+  Clone this repository In your terminal , navigate to the app folder. Run `npm start`
 
 ## Troubleshooting
 
@@ -22,7 +23,7 @@ allows users to ask questions about Philippine jurisprudence and Republic Acts.
 This project was built iteratively with an AI coding agent (Codex), moving through:
 
 
-Initial MVP chat UI + direct API integration
+Initial MVP chat UI + direct API integration.
 Fix for a Failed to fetch error caused by the agent blocking browser-origin requests → added a same-origin proxy
 Netlify deployment support via serverless functions
 
