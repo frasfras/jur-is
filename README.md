@@ -14,7 +14,7 @@ allows users to ask questions about Philippine jurisprudence and Republic Acts.
 
 ## Troubleshooting
 
-- **Toolbox connection errors** — confirm the  server is running at port `3000`.
+- **Tool connection errors** — confirm the  server is running at port `3000`.
 
 ## Disclaimer
 

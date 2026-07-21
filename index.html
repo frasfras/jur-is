@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Juris Copilot — AI-assisted research for Philippine law, jurisprudence, and Republic Acts."
+    />
+    <title>Juris Copilot | Philippine legal research</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Juris Copilot home">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>Juris <em>Copilot</em></span>
+        </a>
+        <div class="session-status" id="sessionStatus" aria-live="polite">
+          <span class="status-dot"></span><span>Preparing research session</span>
+        </div>
+        <button class="reset-button" id="resetButton" type="button" title="Start a new research session">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8.1 8.1 0 0 0-15.5-2.8L3 10m0 0h4m-4 0V6m1 7a8 8 0 0 0 15.5 2.8L21 14m0 0h-4m4 0v4"/></svg>
+          <span>Reset session</span>
+        </button>
+      </header>
+
+      <section class="chat-area" id="chatArea" aria-live="polite" aria-label="Legal research conversation">
+        <div class="conversation" id="conversation">
+          <section class="welcome-card" id="welcomeCard">
+            <p class="eyebrow">Philippine legal research, grounded in sources</p>
+            <h1>Find the authority<br /><em>behind the answer.</em></h1>
+            <p class="welcome-copy">Ask about Philippine jurisprudence and Republic Acts. Juris Copilot searches legal sources so you can verify every answer.</p>
+            <div class="suggestion-grid" aria-label="Suggested questions">
+              <button class="suggestion" type="button" data-question="What are the requisites of a valid contract under Philippine law?">
+                <span>01</span> Requisites of a valid contract
+              </button>
+              <button class="suggestion" type="button" data-question="Find Supreme Court cases on the doctrine of stare decisis in the Philippines.">
+                <span>02</span> Cases on stare decisis
+              </button>
+              <button class="suggestion" type="button" data-question="What does the Data Privacy Act of 2012 provide about personal information controllers?">
+                <span>03</span> Data Privacy Act obligations
+              </button>
+              <button class="suggestion" type="button" data-question="Explain the elements of grave abuse of discretion in Philippine jurisprudence.">
+                <span>04</span> Grave abuse of discretion
+              </button>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <footer class="composer-wrap">
+        <form class="composer" id="chatForm">
+          <label class="sr-only" for="messageInput">Legal research question</label>
+          <textarea
+            id="messageInput"
+            rows="1"
+            placeholder="Ask a question about Philippine law, jurisprudence, or Republic Acts..."
+            autocomplete="off"
+          ></textarea>
+          <button class="send-button" id="sendButton" type="submit" aria-label="Send question">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 3 10.2 13.8M21 3l-6.9 18-4.1-7.2L3 9.7 21 3Z"/></svg>
+          </button>
+        </form>
+        <p class="disclaimer">AI-assisted research · Always verify against the cited primary legal sources.</p>
+      </footer>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
