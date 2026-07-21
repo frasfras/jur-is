@@ -11,6 +11,8 @@ allows users to ask questions about Philippine jurisprudence and Republic Acts.
 
 ## Configuration
 
+## Get Started
+   In your terminal , navigate to the app folder. Run `npm start`
 
 ## Troubleshooting
 
