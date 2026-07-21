@@ -1,4 +1,4 @@
-# Juris CoPilot — Philippine legal research , grounded in sources
+# Legal expert CoPilot — Philippine legal research , grounded in sources
 
 This repository contains a web app that uses GPT-5.6 and Gemini to implement a AI-powered  **Legal research Agent**. It allows users to ask questions about Philippine jurisprudence and Republic Acts, backed by a remote legal-research agent as its primary source.
 
@@ -35,7 +35,7 @@ Debugging a CORS/fetch error — When the live app failed with "Failed to fetch,
 
 Deployment guidance — The user asked about deploying to Netlify specifically. Since Netlify doesn't run a persistent Node server, Codex adapted the proxy into a Netlify serverless Function, and gave concrete deployment steps (file to add, netlify.toml, env var setup, GitHub-based deploy flow).
 
-GPT-5.6 - used to generate titles in remote agent
+GPT-5.6 - used as legal research assistant. Uses the tools available from the legal MCP server to answer the user's legal question as accurately as possible in remote agent
 
 ## Disclaimer
 
