@@ -1,4 +1,4 @@
-# Juris CoPilot — Philippine legal research , grounded in sources<
+# Juris CoPilot — Philippine legal research , grounded in sources
 
 This repository contains a web app that uses GPT-5.6 and Gemini toolset to implement a **Legal research Agent**. It allows users to ask questions about Philippine jurisprudence and Republic Acts.
 
