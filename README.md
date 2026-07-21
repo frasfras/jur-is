@@ -19,7 +19,7 @@ The frontend (index.html, styles.css, app.js) talks to a legal-research agent th
 Two deployment paths are supported:
 
 
-Node server (server.js, package.json, Dockerfile) — run with npm start, or deploy via the included Dockerfile. The browser calls /api/session and /api/run, which server.js forwards to the agent.
+Node server (server.js, package.json, Dockerfile) — run with npm start, or deploy via the included Dockerfile. The browser calls /api/session and /api/run, which server.js forwards to the agent. </br>
 Netlify Functions — a serverless equivalent (netlify/functions/legal-agent.mjs) that proxies the same /api/* routes for static hosting on Netlify, since Netlify doesn't run a persistent Node server.
 
 ## Get Started
